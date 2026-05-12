@@ -298,16 +298,6 @@ module IdentityConfig
     config.add(:in_person_send_proofing_notifications_enabled, type: :boolean)
     config.add(:in_person_stop_expiring_enrollments, type: :boolean)
     config.add(:invalid_gpo_confirmation_zipcode, type: :string)
-    config.add(:irs_credential_tenure_report_issuers, type: :json)
-    config.add(:irs_credential_tenure_report_config, type: :json)
-    config.add(:irs_fraud_metrics_issuers, type: :json)
-    config.add(:irs_fraud_metrics_emails, type: :json)
-    config.add(:irs_issuers, type: :json)
-    config.add(:irs_partner_strings, type: :json)
-    config.add(:irs_registration_funnel_emails, type: :json)
-    config.add(:irs_registration_funnel_issuers, type: :json)
-    config.add(:irs_verification_report_issuers, type: :json)
-    config.add(:irs_verification_report_config, type: :json)
     config.add(:lexisnexis_account_id, type: :string)
     config.add(:lexisnexis_threatmetrix_authentication_policy, type: :string)
     config.add(:lexisnexis_base_url, type: :string)
@@ -590,7 +580,6 @@ module IdentityConfig
     config.add(:voice_otp_pause_time)
     config.add(:voice_otp_speech_rate)
     config.add(:weekly_auth_funnel_report_config, type: :json)
-    config.add(:irs_credentials_emails, type: :json)
   end.freeze
   # rubocop:enable Layout/LineLength
   # rubocop:enable Metrics/BlockLength
